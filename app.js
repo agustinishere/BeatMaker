@@ -15,4 +15,7 @@ class DrumKit {
     this.muteBtns = document.querySelectorAll(".mute");
     this.tempoSlider = document.querySelector(".tempo-slider");
   }
+  activePad() {
+    this.classList.toggle("active");
+  }
 }
