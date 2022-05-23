@@ -57,3 +57,18 @@ class DrumKit {
       }, interval);
     }
   }
+  /* activePad() {
+    this.classList.toggle("active");
+  } */
+  updateBtn() {
+    //NULL
+
+    if (!this.isPlaying) {
+      this.playBtn.innerText = "Stoppy";
+      this.playBtn.classList.add("active");
+    } else {
+      this.playBtn.innerText = "Play";
+      this.playBtn.classList.remove("active");
+    }
+  }
+}
