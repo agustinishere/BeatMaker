@@ -71,4 +71,22 @@ class DrumKit {
       this.playBtn.classList.remove("active");
     }
   }
+  changeSound(e) {
+    const selectionName = e.target.name;
+    const selectionValue = e.target.value;
+    switch (selectionName) {
+      case "kick-select":
+        this.kickAudio.src = selectionValue;
+        console.log(selectionValue);
+        break;
+      case "snare-select":
+        this.snareAudio.src = selectionValue;
+        console.log(selectionValue);
+        break;
+      case "hihat-select":
+        this.hihatAudio.src = selectionValue;
+        console.log(selectionValue);
+        break;
+    }
+  }
 }
