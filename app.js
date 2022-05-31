@@ -134,3 +134,14 @@ class DrumKit {
     }
   }
 }
+
+const drumKit = new DrumKit();
+
+//Event Listeners
+
+drumKit.pads.forEach((pad) => {
+  pad.addEventListener("click", drumKit.activePad);
+  pad.addEventListener("animationend", function () {
+    this.style.animation = "";
+  });
+});
