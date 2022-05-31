@@ -145,3 +145,8 @@ drumKit.pads.forEach((pad) => {
     this.style.animation = "";
   });
 });
+
+drumKit.playBtn.addEventListener("click", function () {
+  drumKit.updateBtn();
+  drumKit.start();
+});
