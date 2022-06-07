@@ -165,3 +165,6 @@ drumKit.muteBtns.forEach((btn) => {
 drumKit.tempoSlider.addEventListener("input", function (e) {
   drumKit.changeTempo(e);
 });
+drumKit.tempoSlider.addEventListener("change", function (e) {
+  drumKit.updateTempo(e);
+});
